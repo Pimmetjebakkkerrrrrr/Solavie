@@ -1,9 +1,234 @@
-<!doctype html>
-<html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solavie - Menukaart</title>
+    <!-- Koppeling naar het aparte CSS-bestand -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Solavie</h1>
+        <p>Exclusief & Sfeervol Genieten</p>
+    </header>
+
+    <div class="container">
+
+        <!-- GERECHTEN -->
+        <section class="menu-section">
+            <h2>Gerechten</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Spaghetti</div>
+                    <div class="item-description">Keuze uit Knoflook, Carbonara of Bolognese</div>
+                </div>
+                <div class="item-price">&euro; 99,99</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Wagyu biefstuk</div>
+                    <div class="item-description">Prachtig gemarmerd, boterzacht rundvlees</div>
+                </div>
+                <div class="item-price">&euro; 149,99</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Sushi</div>
+                    <div class="item-description">Nigiri, Maki, California roll, Temaki en Uramaki (inclusief sojasaus)</div>
+                </div>
+                <div class="item-price">&euro; 119,99</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Burger met friet</div>
+                    <div class="item-description">Huisgemaakte burger geserveerd met goudgele frietjes</div>
+                </div>
+                <div class="item-price">&euro; 89,99</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Soep</div>
+                    <div class="item-description">Keuze uit Tomaat, Courgette, Champignons, Mosterd of Groente</div>
+                </div>
+                <div class="item-price">&euro; 89,99</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Ramen</div>
+                    <div class="item-description">Rijke Japanse noedelsoep met verse toppings</div>
+                </div>
+                <div class="item-price">&euro; 99,99</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Pannenkoeken</div>
+                    <div class="item-description">Inclusief toppings naar keuze</div>
+                </div>
+                <div class="item-price">&euro; 89,99</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Salade</div>
+                    <div class="item-description">Frisse seizoenssalade met een huisgemaakte dressing</div>
+                </div>
+                <div class="item-price">&euro; 79,99</div>
+            </div>
+        </section>
+
+        <!-- NAGERECHTEN -->
+        <section class="menu-section">
+            <h2>Nagerechten</h2>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Dame Blanche</div>
+                    <div class="item-description">Vanille-ijs met warme chocoladesaus en slagroom</div>
+                </div>
+                <div class="item-price">&euro; 44,99</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Tiramisu</div>
+                    <div class="item-description">Klassiek Italiaans dessert met alcohol</div>
+                </div>
+                <div class="item-price">&euro; 49,99</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Cr&egrave;me br&ucirc;l&eacute;e</div>
+                    <div class="item-description">Met een flinterdun gekarameliseerd suikerlaagje</div>
+                </div>
+                <div class="item-price">&euro; 44,99</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Citroen meringue taartje</div>
+                    <div class="item-description">Friszoet taartje met zachte meringue</div>
+                </div>
+                <div class="item-price">&euro; 39,99</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Panna Cotta</div>
+                    <div class="item-description">Zacht romig dessert met rood fruit</div>
+                </div>
+                <div class="item-price">&euro; 39,99</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">IJs naar keuze</div>
+                    <div class="item-description">Diverse smaken beschikbaar</div>
+                </div>
+                <div class="item-price">
+                    &euro; 19,99
+                    <span class="price-note">+alcohol &euro; 39,99</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ALCOHOLISCHE DRANKEN -->
+        <section class="menu-section">
+            <h2>Drankjes Alcohol</h2>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Wijn</div>
+                    <div class="item-description">Keuze uit wit, rood of ros&eacute;</div>
+                </div>
+                <div class="item-price">&euro; 49,99</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Champagne</div>
+                    <div class="item-description">Feestelijke bubbels per glas</div>
+                </div>
+                <div class="item-price">&euro; 54,99</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Bier</div>
+                    <div class="item-description">Ook beschikbaar in 0.0% variant</div>
+                </div>
+                <div class="item-price">&euro; 44,99</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Bacardi</div>
+                    <div class="item-description">Premium rum</div>
+                </div>
+                <div class="item-price">&euro; 49,99</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Cocktails</div>
+                    <div class="item-description">Mojito, Margarita of Pornstar Martini</div>
+                </div>
+                <div class="item-price">&euro; 44,99</div>
+            </div>
+        </section>
+
+        <!-- ALCOHOLVRIJE DRANKEN -->
+        <section class="menu-section">
+            <h2>Drankjes zonder alcohol</h2>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Mocktail</div>
+                    <div class="item-description">Frisse, alcoholvrije cocktail</div>
+                </div>
+                <div class="item-price">&euro; 39,99</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Coca-Cola / Fanta</div>
+                    <div class="item-description">Klassieke frisdranken</div>
+                </div>
+                <div class="item-price">&euro; 19,99</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Water</div>
+                    <div class="item-description">Plat of bruisend water</div>
+                </div>
+                <div class="item-price">&euro; 9,99</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Appelsap / Sinaasappelsap</div>
+                    <div class="item-description">Verse vruchtensappen</div>
+                </div>
+                <div class="item-price">&euro; 14,99</div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Kom gezellig bij ons dineren!</p>
+        <a href="mailto:info@solavie.nl" class="btn-reserveer">Nu Reserveren</a>
+    </footer>
+
+</body>
 </html>
