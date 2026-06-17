@@ -1,8 +1,8 @@
 :root {
-    --primary: #c5a880; /* Luxe goud/beige kleur */
-    --dark: #121212;    /* Donkere achtergrond van de website */
-    --light: #f4f4f4;   /* Algemene lichte tekstkleur */
-    --grey: #1a1a1a;    /* Achtergrondkleur van de menukaarten */
+    --primary: #c5a880; 
+    --dark: #121212;    
+    --light: #f4f4f4;   
+    --grey: #1a1a1a;    
 }
 
 body {
@@ -16,7 +16,7 @@ body {
 
 header {
     text-align: center;
-    padding: 60px 20px;
+    padding: 40px 20px 20px 20px;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(18,18,18,1));
     border-bottom: 2px solid var(--primary);
 }
@@ -33,6 +33,28 @@ header p {
     font-size: 1.2rem;
     color: #888;
     margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Navigatiebalk */
+.nav-menu {
+    margin-top: 15px;
+}
+
+.nav-menu a {
+    color: #aaa;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
 }
 
 .container {
@@ -106,6 +128,34 @@ header p {
     text-align: right;
 }
 
+/* Recensie Kaartjes */
+.review-card {
+    background-color: #222;
+    border-left: 4px solid var(--primary);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.review-stars {
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.review-text {
+    font-size: 1.1rem;
+    color: #fff;
+    font-style: italic;
+    margin: 0 0 10px 0;
+}
+
+.review-author {
+    color: #888;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
 footer {
     text-align: center;
     padding: 60px 20px;
@@ -138,7 +188,6 @@ footer p {
     transform: translateY(-2px);
 }
 
-/* Aanpassingen voor mobiele telefoons */
 @media (max-width: 600px) {
     header h1 { font-size: 2.5rem; }
     .menu-item { flex-direction: column; }
